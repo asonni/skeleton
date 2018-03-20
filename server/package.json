@@ -1,0 +1,26 @@
+{
+  "name": "skeleton-server",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=production node ./bin/www",
+    "server": "nodemon ./bin/www",
+    "client": "npm run start --prefix ../client",
+    "build": "npm run build --prefix ../client",
+    "dev": "npm-run-all --parallel server client",
+    "prod": "npm-run-all --parallel start build"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.15.5",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.14.11",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.2"
+  }
+}
